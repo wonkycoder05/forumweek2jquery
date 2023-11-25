@@ -1,0 +1,34 @@
+
+            
+            .title{
+
+                text-align: center;
+                font-size: xx-large;
+                color: burlywood;
+            }
+    
+            body{
+                
+                text-align: justify;
+                color: rgb(15, 42, 123);
+                margin-left: 20px ;
+                margin-top: 20px;
+                margin-bottom: 20px;
+                display: flex;
+                flex-direction: column;
+                background-image: url('bglogo.png');
+                background-size: cover;
+                background-repeat: no-repeat;
+                max-width: 100%;
+                overflow:scroll;
+                table-layout: auto;
+            }
+            table, th, td {
+                border: 5px transparent;
+                border-collapse:seperate;
+                table-layout: auto;
+              }
+              th, td {
+                background-color: #96D4D4;
+              }
+

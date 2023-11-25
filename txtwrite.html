@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <script src="jquery-3.7.1.min.js"></script>
+    <script>
+        $(document).ready(function() {
+            $("#writebutton").click(function() {
+                var content = document.getElementById("input").value;
+                document.getElementById("textfile").value = content;
+            });
+        });
+    </script>
+</head>
+<body>
+    <textarea type="textarea" id="input"></textarea>
+    <button type="button" id="writebutton">write me</button>
+    <br>
+    <textarea type="textarea" id="textfile" readonly></textarea>
+</body>
+</html>

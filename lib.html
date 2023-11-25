@@ -1,0 +1,31 @@
+<head>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script>
+        $(document).ready(function() {
+        var reader = new FileReader();
+        reader.readAsText($("#inputfile").get(0));
+        reader.onload = function(e) {
+          $("#textfile").text(e.target.result);
+        }
+      });
+
+      if ($file_size >= 20480000) {
+ 
+    	} else {
+            alert("it's too big broski, cannot more than 20mb")
+    }
+
+    </script>
+</head>  
+<body>
+    <form id="uploadform" name="uploadform" class="uploadform" method="post" enctype="multipart/form-data" action="/file_upload">
+        <input type="file" id="uploadfile" ondrop="drop(event)" name="uploadfile" />
+    </form>
+    <iframe src="https://twitter.com/home"
+       loading="lazy"
+       width="600"
+       height="400">
+</iframe>
+
+    
+</body>
